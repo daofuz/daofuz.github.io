@@ -5,7 +5,7 @@ A static, single-page academic homepage. Plain HTML/CSS with a few lines of JS (
 ```
 index.html                 the page
 assets/css/style.css       styles (light + dark theme tokens at the top)
-assets/img/profile.svg     placeholder avatar (initials)
+assets/img/profile.jpg     profile photo
 assets/img/favicon.svg     browser-tab icon
 cv/Daofu_Zhang_Research_CV.pdf    CV linked from the site
 cv/Daofu_Zhang_Research_CV.html   CV source (re-export the PDF from this)
@@ -22,8 +22,8 @@ Run it from this folder, then open http://localhost:8765.
 
 ## Things to fill in
 
-- **Photo**: save a square photo as `assets/img/profile.jpg`, then in `index.html` change the avatar `src` from `assets/img/profile.svg` to `assets/img/profile.jpg`.
-- **Links**: Google Scholar / LinkedIn lines are commented out in `index.html` (search for `Add when available`). Uncomment and replace the placeholders.
+- **Photo**: `assets/img/profile.jpg` (400×400). To change it, overwrite that file with another square photo.
+- **Links**: the Google Scholar line is commented out in `index.html` (search for `Add when available`). Uncomment and replace the placeholders.
 - **News**: add new items at the top of the `<ul class="news">` list.
 - **Publications**: copy an existing `<li class="pub">` block. Status tag classes: `ok` (published), `wait` (under review), `info` (submitted).
 
