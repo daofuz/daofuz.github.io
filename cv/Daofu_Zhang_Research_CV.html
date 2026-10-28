@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daofu Zhang CV</title>
+<style>
+  @page { size: Letter; margin: 0.6in 0.7in 0.6in 0.7in; }
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --rule: #9a9a9a;
+    --accent: #1f3a5f;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; color: var(--ink); }
+  body {
+    font-family: Charter, "Bitstream Charter", Georgia, "Times New Roman", serif;
+    font-size: 10.5pt;
+    line-height: 1.34;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page { max-width: 7.1in; margin: 0 auto; }
+  @media screen { .page { padding: 32px 16px; } }
+
+  header { text-align: center; margin-bottom: 10px; }
+  header h1 {
+    font-size: 21pt; letter-spacing: 0.06em; margin: 0 0 3px 0;
+    font-weight: 700; color: var(--accent);
+  }
+  header .role { font-size: 10.5pt; margin: 0 0 2px 0; }
+  header .contact { font-size: 10pt; color: var(--muted); margin: 0; }
+  header a { color: inherit; text-decoration: none; }
+
+  section { margin-top: 11px; }
+  h2 {
+    font-size: 11pt; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--accent); margin: 0 0 5px 0; padding-bottom: 2px;
+    border-bottom: 0.75pt solid var(--rule);
+    break-after: avoid;
+  }
+  h3 {
+    font-size: 10.5pt; font-style: italic; font-weight: 600;
+    margin: 6px 0 3px 0; break-after: avoid;
+  }
+
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .row .when { white-space: nowrap; color: var(--muted); font-size: 10pt; }
+  .entry { margin-bottom: 5px; }
+  .entry.keep { break-inside: avoid; }
+  .entry .title { font-weight: 700; }
+  .entry .sub { font-style: italic; }
+  .project { margin: 4px 0 0 0; break-inside: avoid; }
+  .project .name { font-weight: 600; }
+  .project .fund { font-style: italic; color: var(--muted); font-size: 10pt; }
+
+  ul { margin: 2px 0 0 0; padding-left: 17px; }
+  li { margin: 1px 0; }
+
+  .interests { margin: 0; }
+  .interests span { white-space: nowrap; }
+
+  ol.pubs { margin: 0; padding-left: 0; list-style: none; counter-reset: none; }
+  ol.pubs li { display: grid; grid-template-columns: 30px 1fr; margin: 0 0 5px 0; break-inside: avoid; }
+  ol.pubs .tag { color: var(--muted); }
+  .me { font-weight: 700; }
+  .venue { font-style: italic; }
+  .status { font-weight: 600; color: var(--accent); }
+  .pubs a { color: inherit; }
+
+  dl.skills { display: grid; grid-template-columns: 11.5em 1fr; margin: 0; row-gap: 3px; column-gap: 8px; }
+  dl.skills dt { font-weight: 600; }
+  dl.skills dd { margin: 0; }
+
+  footer { margin-top: 12px; text-align: right; font-size: 8.5pt; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <h1>DAOFU ZHANG</h1>
+  <p class="role">Ph.D. Student, Electrical and Computer Engineering &nbsp;|&nbsp; University of Utah, Salt Lake City, UT 84112</p>
+  <p class="contact">Email: <a href="mailto:daofu.zhang@utah.edu">daofu.zhang@utah.edu</a> &nbsp;|&nbsp; GitHub: <a href="https://github.com/daofuz">github.com/daofuz</a></p>
+</header>
+
+<section>
+  <h2>Education</h2>
+  <div class="entry row"><div><span class="title">Ph.D., Electrical and Computer Engineering</span><br>University of Utah &middot; <span class="sub">Advisor: <a href="https://zhaofuheng.github.io/" style="color:inherit;text-decoration:none">Prof. Fuheng Zhao</a></span></div><div class="when">2024 &ndash; Present</div></div>
+  <div class="entry row"><div><span class="title">M.S., Data Science and Machine Learning</span><br>UC San Diego</div><div class="when">03/2023</div></div>
+  <div class="entry row"><div><span class="title">B.E., Computer Science and Engineering</span><br>The Hong Kong University of Science and Technology (HKUST) &middot; <span class="sub">First Class Honors</span></div><div class="when">07/2021</div></div>
+</section>
+
+<section>
+  <h2>Research Interests</h2>
+  <ul class="ri">
+    <li><b>LLM Model Routing and Cost-Efficient Inference:</b> budget-constrained model selection for LLM-powered data processing and agent workloads; task-aligned routing from small paired samples; batch and streaming routing with spending guarantees.</li>
+    <li><b>Conformal Inference and Novelty Detection:</b> finite-sample FDR control for ML-based detectors built on conformal p-values; adversarial robustness of these guarantees.</li>
+    <li><b>Multiple Testing in Distributed Systems:</b> FDR control in distributed hypothesis testing; Byzantine attacks on reported p-values and counter-attacks that restore FDR control.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Publications and Manuscripts</h2>
+
+  <h3>Conference Papers</h3>
+  <ol class="pubs">
+    <li><span class="tag">[C1]</span><span><span class="me">D. Zhang</span>, M. Pournaderi, Y. Xiang, and P. K. Varshney, &ldquo;Distributed Multiple Testing with False Discovery Rate Control in the Presence of Byzantines,&rdquo; in <span class="venue">Proc. IEEE International Symposium on Information Theory (ISIT)</span>, Ann Arbor, MI, USA, June 2025, pp. 1&ndash;6. <a href="https://doi.org/10.1109/ISIT63088.2025.11195318">doi:10.1109/ISIT63088.2025.11195318</a></span></li>
+  </ol>
+
+  <h3>Under Review</h3>
+  <ol class="pubs">
+    <li><span class="tag">[S2]</span><span><span class="me">D. Zhang</span>, Q. Zeng, C. Liu, and F. Zhao, &ldquo;ARoute: Task-Aligned Batch and Streaming Model Routing,&rdquo; submitted to <span class="venue">Proceedings of the VLDB Endowment (PVLDB)</span>, 2027. <span class="status">Submitted.</span></span></li>
+    <li><span class="tag">[S1]</span><span><span class="me">D. Zhang</span>, M. Pournaderi, H. M. Clifford, Y. Xiang, and P. K. Varshney, &ldquo;On the Adversarial Robustness of Learning-based Conformal Novelty Detection,&rdquo; <span class="venue">Communications in Statistics &ndash; Theory and Methods</span>. <span class="status">Under review.</span> <a href="https://arxiv.org/abs/2510.00463">arXiv:2510.00463</a></span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Research Experience</h2>
+
+  <div class="entry">
+    <div class="row"><div><span class="title">Ph.D. Research Assistant</span> &mdash; University of Utah</div><div class="when">2024 &ndash; Present</div></div>
+
+    <div class="project">
+      <div class="row"><div class="name">Task-Aligned Model Routing for LLM Workloads (ARoute) [S2]</div><div class="when">2026</div></div>
+      <ul>
+        <li>Proposed ARoute, a router that learns per-request accuracy-gain and incremental-cost estimates to choose between a weaker and a stronger LLM <em>before</em> inference, adapting to a new task and model pair from about 50 paired records.</li>
+        <li>Designed two variants: ARoute-Batch assigns the stronger model to the requests with the greatest expected benefit under a cost budget; ARoute-Stream routes online with a validation-calibrated threshold that adjusts as the budget is consumed. Proved a finite-sample guarantee on expected normalized spending for ARoute-Stream.</li>
+        <li>Evaluated on MMLU-Pro, LiveCodeBench, SuperGPQA, and two SWAN value-filling tasks against RouteLLM, FrugalGPT, BARGAIN, and OctoSelector: highest mean accuracy in all 15 task&ndash;cost settings (+4.1 points on average, up to +11.9) and up to 2.8&times; faster batch completion than cascades.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="row"><div class="name">Adversarial Robustness of Conformal Novelty Detection [S1]</div><div class="when">2025 &ndash; 2026</div></div>
+      <div class="fund">Supported in part by NSF Grant CCF-2611415</div>
+      <ul>
+        <li>Studied two learning-based conformal novelty detection frameworks with finite-sample FDR control (AdaDetect and a one-class classifier approach), analyzing how their ML-based empirical p-values behave under adversarial perturbation.</li>
+        <li>Formulated an oracle attack and derived an upper bound on the worst-case FDR degradation; turned it into a practical attack that needs only query access to output labels.</li>
+        <li>Combined the attack with two black-box adversarial algorithms on synthetic and real-world data, showing that FDR can be pushed well above its target level while detection power stays high.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="row"><div class="name">Distributed Multiple Testing under Byzantine Attacks [C1]</div><div class="when">2024 &ndash; 2025</div></div>
+      <div class="fund">Supported in part by NSF Grant CCF-2420146</div>
+      <ul>
+        <li>Theorized and empirically evaluated distributed multiple testing with FDR control when captured nodes report corrupted p-values.</li>
+        <li>Characterized the effect on global FDR of two attacks: one with full knowledge of the true nulls, and one that infers nulls with the Benjamini&ndash;Hochberg procedure.</li>
+        <li>Designed counter-attack strategies that restore FDR guarantees.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="entry keep" style="margin-top:7px">
+    <div class="row"><div><span class="title">Undergraduate Researcher</span></div><div class="when">04/2020 &ndash; 12/2020</div></div>
+    <div class="sub">A Semi-Supervised Approach to 3D Human Pose Estimation</div>
+    <ul>
+      <li>Generated synthetic datasets and pre-trained an auto-encoder with skip connections (PyTorch).</li>
+      <li>Integrated few-shot layers; applied non-maximum suppression for precise joint heatmaps.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>Python, MATLAB, SQL, Java, JavaScript/TypeScript, C#, LaTeX</dd>
+    <dt>Deep Learning &amp; NLP</dt><dd>PyTorch; Hugging Face Transformers, Datasets, Accelerate, Evaluate; fine-tuning BERT-based encoders; soft-prompt tuning; learned classification and regression heads for routing</dd>
+    <dt>LLM Inference</dt><dd>vLLM, OpenAI API, Ollama; cost and latency measurement</dd>
+    <dt>Statistical Methods</dt><dd>Multiple hypothesis testing and FDR control (Benjamini&ndash;Hochberg); conformal <span style="white-space:nowrap">p-values</span> and conformal novelty detection (AdaDetect, one-class classifiers); distributed detection under Byzantine attacks; black-box adversarial attacks; <span style="white-space:nowrap">finite-sample</span> guarantees</dd>
+    <dt>Scientific Computing</dt><dd>NumPy, SciPy, pandas, scikit-learn, Matplotlib, OpenCV, Jupyter</dd>
+    <dt>Systems &amp; Tools</dt><dd>Git, Linux, AWS, MySQL, MongoDB, Neo4j</dd>
+  </dl>
+</section>
+
+<footer>Last updated: October 2026</footer>
+
+</div>
+</body>
+</html>
